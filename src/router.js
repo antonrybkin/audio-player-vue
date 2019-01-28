@@ -14,6 +14,13 @@ export default new Router({
       component: Home
     },
     {
+      path: "/credits",
+      name: "credits",
+      // Credits page
+      component: () =>
+        import(/* webpackChunkName: "about" */ "./views/Credits.vue")
+    },
+    {
       path: "/about",
       name: "about",
       // route level code-splitting
